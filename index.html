@@ -2,38 +2,25 @@
 <html>
     <head>
         <title>Online Ticket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- CSS -->
         <style>
+            
             body {
                 text-align: center;
                 padding-left: 8px;
                 padding-right: 8px;
             }
-            .mylink {
-                display: none;
-            }
+
             table {
                 border-collapse: collapse;
             }
-            .box {
-                width: 300px;
-                height: 50px;
-                margin: 25px;
-                background: rgb(7,252,7);
-                text-align: center;
-                animation-name: sample;
-                animation-duration: 10s;
-                font-size: 20;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            @keyframes sample {
-                0%{background: pink; width: 200px;}
-                50%{background: cyan;}
-            } 
+
             li {
                 margin: 15px 10px;
                 display: inline;
@@ -45,12 +32,14 @@
                 font-style: italic;
                 color: rgb(179, 0, 255);
             }
+
             table,td {
                 border: 1px solid rgb(0, 0, 0);
                 text-align: center;
                 margin: auto;
                 font-size: 18px;
             }
+
             th {
                 color: rgb(255, 0, 0);
                 border: 1px solid rgb(0, 0, 0);
@@ -59,6 +48,7 @@
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-size: 20px;
             }
+
             h2 {
                 margin: 10px;
                 padding: 15px;
@@ -67,19 +57,48 @@
                 text-decoration-line: underline;
                 font-style: italic;
             }
+
             h3 {
                 text-align: left;
             }
+
             p {
                 text-align: left;
             }
+
+            .mylink {
+                display: none;
+            }
+
+            .box {
+                width: 300px;
+                height: 50px;
+                margin: 25px ;
+                background: rgb(7, 252, 7);
+                text-align: center;
+                animation-name: sample;
+                animation-duration: 45s;
+                font-size: 20;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            @keyframes sample {
+                0% {
+                    background: pink;
+                    width: 200px;
+                }
+                50% {
+                    background: cyan;
+                }
+            }
+
         </style>
     </head>
-
-    <body background="https://wallpaperaccess.com/full/136008.jpg" style="background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-        <!-- Navigation Bar-->
+    <body background="https://wallpaperaccess.com/full/136008.jpg" style=" background-size: 100%; background-repeat: repeat; background-attachment: fixed; ">
+        
+        <!-- Navigation Bar -->
         <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-            <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Ticket</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Online Ticket</b></a>
             <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
         </div>
 
@@ -93,7 +112,6 @@
             </ul>
         </nav>
 
-        <!-- 3 Title animations -->
         <div class="box">Book Train Ticket</div>
         <div class="box">Book Bus Ticket</div>
         <div class="box">Book Flight Ticket</div>
@@ -109,8 +127,8 @@
                 </div>
 
                 <!-- Tabs -->
-                <div class="Flight" class="w3-container w3-white w3-padding-16 myLink">
-                    <h3>Travel the World with together</h3>
+                <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+                    <h3>Travel the world with us</h3>
                     <div class="w3-row-padding" style="margin:0 -16px;">
                         <div class="w3-half">
                             <label>From</label>
@@ -123,6 +141,7 @@
                     </div>
                     <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
                 </div>
+
                 <div id="Train" class="w3-container w3-white w3-padding-16 myLink">
                     <h3>Find the best Trains</h3>
                     <div class="w3-row-padding" style="margin:0 -16px;">
@@ -137,17 +156,19 @@
                     </div>
                     <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
                 </div>
+
                 <div id="Bus" class="w3-container w3-white w3-padding-16 myLink">
                     <h3>Best Bus rental in the world!</h3>
-                    <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span>Special offer if you book today: 25% off anywhere in the world with 🚌 service</p>
+                    <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with Jungli 🚌</p>
                     <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
                     <p><button class="w3-button w3-dark-grey">Search Availability</button></p>
                 </div>
             </div>
         </header>
-        
-        <!-- Tables -->
-        <h2>Recent Trains</h2>
+
+
+        <!-- Table -->
+        <h1>🚂🚃🚃</h1>
         <table>
             <tr>
                 <th>FROM</th>
@@ -160,8 +181,8 @@
                 <td>09:45</td>
             </tr>
             <tr>
-                <td>Ahemdabad</td>
-                <td>Kurukshetra</td>
+                <td>Ahmedabad</td>
+                <td>Bihar</td>
                 <td>13:45</td>
             </tr>
             <tr>
@@ -176,12 +197,12 @@
             </tr>
         </table>
 
-        <h2>Recent Flight</h2>
+        <h1>Flight</h1>
         <table>
             <tr>
-                <td>FROM</td>
-                <td>TO</td>
-                <td>TIMMING</td>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>TIMMING</th>
             </tr>
             <tr>
                 <td>Jaipur</td>
@@ -189,14 +210,14 @@
                 <td>21:45</td>
             </tr>
             <tr>
-                <td>Bangalore</td>
+                <td>Banglore</td>
                 <td>Mumbai</td>
                 <td>01:45</td>
             </tr>
             <tr>
                 <td>Jaipur</td>
                 <td>Kashmir</td>
-                <td>01:45</td>
+                <td>20:00</td>
             </tr>
             <tr>
                 <td>Jodhpur</td>
@@ -205,12 +226,12 @@
             </tr>
         </table>
 
-        <h2>Recent Buses</h2>
+        <h1>Bus</h1>
         <table>
             <tr>
-                <td>FROM</td>
-                <td>TO</td>
-                <td>TIMMING</td>
+                <th>From</th>
+                <th>TO</th>
+                <th>TIMMING</th>
             </tr>
             <tr>
                 <td>Haridwar</td>
@@ -233,7 +254,7 @@
                 <td>07:50</td>
             </tr>
         </table>
-        
+
         <!-- Content -->
         <h3>How to Book Train Ticket Online?</h3>
         <p>Booking train tickets with us is extremely easy. Follow the below-mentioned steps to make your train booking with us:</p>
@@ -247,44 +268,55 @@
         <p><strong>Step 8:</strong> Now, make your payment using your preferred option. You can choose from a wide range of options from Debit card, Credit card, UPI, net banking, or wallet money.</p>
         <p><strong>Step 9:</strong> Once the payment is done, Railways authentication page will open, and you are required to fill in your Railway user ID password after that you will also receive your e-ticket on mobile and email ID.</p>
         <p>This process for booking train tickets online is simpler with Ease My Trip. It is better to book your travel online rather than standing in queue for long hours. You just need to have Railway user id to book your train tickets with us. In case you don't have Railway user id, you can easily create it online on the official site or by visiting our website.</p>
-        
-        <hr>
 
+        <hr>
         <h3>What are the RAC, GNWL, PQWL, RLWL and TQWL in Railway Reservation?</h3>
         <p>All of the above except RAC are the types of waiting list available with train booking. WL with a number suggests the waitlisted status of a passenger.</p>
         <p><strong>RAC :</strong> means Reservation against Cancellation. If you have an RAC ticket, then your travel with a train is guaranteed but you will be given a seat (half of a side lower berth mostly) to sit and travel not an entire berth.</p>
         <p><strong>GNWL :</strong> General Waiting List waitlisted tickets are issued to the passenger who begins his/her journey from the originating station of a route or stations closer to the originating station.</p>
         <p><strong>PQWL :</strong> Pooled Quota Waiting List is shared by several small stations of a train route. The quota generally operates from originating station of a train route and only one Pooled Quota is there for entire run. The Pooled Quota is usually selected for the passengers travelling from the originating station to one or few stations short of the terminating station, or from a midway station to theterminating station, or between two stations coming midway of the entire route.</p>
-        <p><strong>RLWL :</strong> Remote Location Waiting List ticket is issued for the stations between the originating and terminating stations. Usually these are important towns or cities of that particular route. These tickets are given a separate priority and their  confirmations will depend on the cancellations of a confirmed ticket. Remote location stations prepare their own chart 2-3 hours prior to the actual departure of train. There are less chances of confirmation for such waitlisted tickets.</p>
-        <p><strong>TQWL :</strong> Tatkal Quota Waiting List was earlier CKWL. It is the waiting list tickets booked under Tatkal Quota. TQWL tickets directly get confirm and don't go through RAC. However, GNWL is given priority over TQWL.</p>
+        <p><strong>RLWL :</strong> Remote Location Waiting List ticket is issued for the stations between the originating and terminating stations.
+            Usually these are important towns or cities of that particular route. These tickets are given a separate priority and their  confirmations will depend on the cancellations 
+            of a confirmed ticket. Remote location stations prepare their own chart 2-3 hours prior to the actual departure of train.
+            There are less chances of confirmation for such waitlisted tickets.</p>
+        <p><strong>TQWL :</strong> Tatkal Quota Waiting List was earlier CKWL. It is the waiting list tickets booked under Tatkal Quota. TQWL tickets directly get 
+            confirm and don't go through RAC. However, GNWL is given priority over TQWL.</p>
 
         <hr>
 
         <h3> When the Chart of a Train is Prepared?</h3>
-        <p>The first chart of a train is typically prepared 4 hours ahead of its departure from originating station or remote location station. Chart of early morning trains is prepared the night before. However, if some seats still remain available, they can be booked by the passengers. So, the final chart is created 30 minutes before departure of train.</p>
 
+        <p>The first chart of a train is typically prepared 4 hours ahead of its departure from originating station or remote location station.
+            Chart of early morning trains is prepared the night before. However, if some seats still remain available, they can be booked by the passengers.
+            So, the final chart is created 30 minutes before departure of train.</p>
+        
         <hr>
 
         <h3>How can I Cancel Tatkal Tickets?</h3>
-        <p>On cancellation of confirmed Tatkal tickets, no refund is given. On the cancellation of contingent and waitlisted Tatkal tickets, amount will be charged as per the existing rules of Railway. However, you can partially cancel the Tatkal e-tickets.</p>
-
-        <hr>
-
-        <h3>What are the Cancellation Charges for Train Tickets?</h3>
-        <p>To get refunds on cancellation of train tickets, passengers should cancel their tickets before chart preparation. If a confirmed train ticket is cancelled more than 48 hrs prior to the scheduled departure of the train, cancellation charges will be Rs.240/- for AC First Class/Executive Class, Rs.200/- for AC 2 Tier/First Class, Rs. 180 for AC 3 Tier/AC Chair car/ AC 3 Economy, Rs.120/- for Sleeper Class and Rs.60/- for Second Class. These cancellation charges are applicable per ticket per passenger and same will be deducted before processing the refunds. If a confirmed ticket is cancelled between 48 and 12 hours prior to the scheduled departure of the train, cancellation charges will be 25% of the fare (subject to the above mentioned minimum flat rate). Between 12 hours and 4 hours prior to the scheduled departure of the train up to chart preparation (whichever is earlier), 50% of the fare paid subject to the minimum cancellation charges.</p>
+        <p>On cancellation of confirmed Tatkal tickets, no refund is given. On the cancellation of contingent and waitlisted Tatkal tickets,
+            amount will be charged as per the existing rules of Railway. However, you can partially cancel the Tatkal e-tickets.</p>
         
-        <!-- Offers -->
+        <p>What are the Cancellation Charges for Train Tickets?
+            To get refunds on cancellation of train tickets, passengers should cancel their tickets before chart preparation.
+            If a confirmed train ticket is cancelled more than 48 hrs prior to the scheduled departure of the train,
+            cancellation charges will be Rs.240/- for AC First Class/Executive Class, Rs.200/- for AC 2 Tier/First Class, Rs. 180 for AC 3 Tier/AC Chair car/ AC 3 Economy,
+            Rs.120/- for Sleeper Class and Rs.60/- for Second Class. These cancellation charges are applicable per ticket per passenger
+            and same will be deducted before processing the refunds.
+            If a confirmed ticket is cancelled between 48 and 12 hours prior to the scheduled departure of the train,
+            cancellation charges will be 25% of the fare (subject to the above mentioned minimum flat rate).
+            Between 12 hours and 4 hours prior to the scheduled departure of the train up to chart preparation (whichever is earlier),
+            50% of the fare paid subject to the minimum cancellation charges.</p>
+
         <div class="w3-container">
             <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
                 <h2>Get the best offers first!</h2>
                 <p>Join our newsletter.</p>
-                <label>E-Mail</label>
+                <label>E-mail</label>
                 <input class="w3-input w3-border" type="text" placeholder="Your Email address">
                 <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
             </div>
-        </div>
+        </div>    
 
-        <!-- Contact -->
         <div class="w3-container" style="text-align: left;">
             <h3>Contact</h3>
             <p>Let us book your next trip!</p>
@@ -301,7 +333,7 @@
 
         <!-- Footer -->
         <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-            <h5>Find us on</h5>
+            <h5>Find Us On</h5>
             <div class="w3-xlarge w3-padding-16">
                 <i class="fa fa-facebook-official w3-hover-opacity"></i>
                 <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -313,11 +345,10 @@
             <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://www.google.com" target="_blank">Start now</a>
         </footer>
 
-        <!-- Script -->
         <script>
             function openLink(evt, linkName) {
                 var i, x, tablinks;
-                x = document.getElementsByClassName("mylink");
+                x = document.getElementsByClassName("myLink");
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
@@ -327,7 +358,7 @@
                 }
                 document.getElementById(linkName).style.display = "block";
                 evt.currentTarget.className += " w3-red";
-            }
+            }        
             document.getElementsByClassName("tablink")[0].click();
         </script>
     </body>
